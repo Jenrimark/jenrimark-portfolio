@@ -1,0 +1,17 @@
+.local/
+dist/
+node_modules/
+site/.vite/
+site/qa/
+tmp/
+*.log
+.env
+.mimocode/
+assets/
+*.jpg
+*.png
+*.pdf
+*.zip
+!site/media/**
+site/media/uploads/*
+!site/media/uploads/.gitkeep

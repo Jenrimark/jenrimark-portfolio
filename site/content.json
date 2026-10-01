@@ -1,0 +1,432 @@
+{
+  "source": {
+    "url": "https://jenrimark.github.io/acad-homepage/",
+    "accessedOn": "2026-10-01",
+    "dateMarkerNote": "实习日期保留原文星号 *；本次读取未见说明，不解释其含义。"
+  },
+  "profile": {
+    "name": "吴汉东",
+    "englishName": "Jenrick Wu",
+    "brand": "Jenrimark 殇璃",
+    "positioning": "AI 产品与全栈开发",
+    "location": "武汉",
+    "email": "2303532728@qq.com",
+    "github": "https://github.com/Jenrimark",
+    "intro": "中国地质大学（武汉）软件工程本科在读，专注 AI 产品与全栈开发。从业务调研、AI 场景拆解，到前后端工程实现，把想法变成可以使用的产品。",
+    "resumeUrl": "https://jenrimark.github.io/acad-homepage/"
+  },
+  "education": [
+    {
+      "school": "中国地质大学（武汉）",
+      "major": "软件工程",
+      "degree": "本科",
+      "period": "2023.09–2027.06",
+      "ranking": "前 10%"
+    }
+  ],
+  "experience": [
+    {
+      "company": "小米（武汉）",
+      "department": "国际业务部 · 系统开发组",
+      "role": "AI 产品实习生",
+      "focus": [
+        "B 端",
+        "中台"
+      ],
+      "period": "2026.06–2026.09*",
+      "product": "跨境电商海外运营智能运营助手 MVP",
+      "description": "聚焦跨境电商海外运营，梳理巡检、监控与舆情复盘中的人工低效场景，完成智能运营助手 MVP 从 0 到 1 落地。",
+      "highlights": [
+        "统一跨境平台风控与采集标准，搭建飞书数据中枢。",
+        "围绕海外运营场景筛选高价值 AI 落地点，并通过试点验证产品价值。"
+      ]
+    },
+    {
+      "company": "美和易思（武汉）",
+      "department": "智慧就业 PDT",
+      "role": "AI 产品实习生",
+      "focus": [
+        "C 端",
+        "多模态"
+      ],
+      "period": "2025.11–2026.04*",
+      "product": "多模态 AI 数字人面试产品",
+      "description": "面向在校求职学生，参与多模态 AI 数字人面试产品 MVP 迭代，将用户需求、题库组织与交互体验连接起来。",
+      "highlights": [
+        "调研求职场景，结构化整理校招题库并改进模型出题体验。",
+        "优化数字人交互点位，围绕响应速度、幻觉率和面试留存持续迭代。"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "greenhouse-ai",
+      "slug": "greenhouse-ai",
+      "title": "Greenhouse·AI",
+      "subtitle": "求职作战系统",
+      "category": "AI 产品",
+      "art": "agent",
+      "technologies": [
+        "TypeScript",
+        "Agent",
+        "Function Calling"
+      ],
+      "summary": "把分散的求职准备，组织成一套可以持续推进的行动。",
+      "description": "从 0 到 1 构建求职 Agent，连接岗位搜索、简历生成与面试评分，让一次求职准备从信息收集走向有目标的执行。",
+      "highlights": [
+        "工具调用：将岗位搜索、简历生成、面试评分等能力封装为可组合工具。",
+        "长期记忆与目标规划：在多轮任务中保留上下文，持续推进准备过程。",
+        "评估闭环：通过工具调用准确率和任务完成率检查实际效果。"
+      ],
+      "flow": [
+        "岗位搜索",
+        "简历准备",
+        "面试评分"
+      ],
+      "status": "published",
+      "featured": true,
+      "sortOrder": 0,
+      "year": "",
+      "cover": "",
+      "sourceUrl": "https://jenrimark.github.io/acad-homepage/#projects-zh"
+    },
+    {
+      "id": "sugarguard",
+      "slug": "sugarguard",
+      "title": "SugarGuard 糖知",
+      "subtitle": "AI 智能控糖",
+      "category": "AI 产品",
+      "art": "health",
+      "technologies": [
+        "Kotlin",
+        "SpringBoot",
+        "RAG"
+      ],
+      "summary": "从识别一杯饮品开始，让健康信息更容易理解。",
+      "description": "组合 ViT 图像分类、RAG 检索与大语言模型，建立从饮品识别到知识检索和解释的三段式流程。",
+      "highlights": [
+        "端侧 ML Kit 与云端 ViT 双路径识别，使用自建饮品数据进行微调。",
+        "将结构化知识接入 RAG 检索，支持有依据的模型回答。",
+        "Android 客户端与 SpringBoot 后端协作，迭代发布 v1.0.0。"
+      ],
+      "flow": [
+        "图像识别",
+        "知识检索",
+        "清晰解释"
+      ],
+      "status": "published",
+      "featured": true,
+      "sortOrder": 1,
+      "year": "",
+      "cover": "",
+      "sourceUrl": "https://jenrimark.github.io/acad-homepage/#projects-zh"
+    },
+    {
+      "id": "startrail",
+      "slug": "startrail",
+      "title": "星轨",
+      "subtitle": "端到端自动驾驶框架",
+      "category": "研究实践",
+      "art": "route",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "nuScenes"
+      ],
+      "summary": "把运动的连续性，带进模型的信息路由。",
+      "description": "国家级大学生创新项目，探索融合动态路由与动量机制的端到端自动驾驶框架。",
+      "highlights": [
+        "设计动量门控动态路由（MGDR），注入速度、加速度等运动物理先验。",
+        "引入动量一致性正则化，抑制轨迹振荡。",
+        "在 nuScenes 数据集上评估时间一致性与复杂路口轨迹误差。"
+      ],
+      "flow": [
+        "运动先验",
+        "动态路由",
+        "轨迹预测"
+      ],
+      "status": "published",
+      "featured": true,
+      "sortOrder": 2,
+      "year": "",
+      "cover": "",
+      "sourceUrl": "https://jenrimark.github.io/acad-homepage/#projects-zh"
+    },
+    {
+      "id": "vehicle-diagnostics",
+      "slug": "vehicle-diagnostics",
+      "title": "智鉴车件",
+      "subtitle": "车辆故障检测",
+      "category": "全栈应用",
+      "art": "vehicle",
+      "technologies": [
+        "Android",
+        "Flutter",
+        "SpringBoot"
+      ],
+      "summary": "把实时车况，整理成可读的检测报告。",
+      "description": "个人车辆故障检测项目，通过蓝牙连接 OBD 采集车况，提供本地与云端检测以及 PDF 报告。",
+      "highlights": [
+        "Android 与 Flutter 多端实现，连接 OBD 实时车辆数据。",
+        "本地与云端双模式检测，自动生成 PDF 检测报告。",
+        "SpringBoot 与 MySQL 后端，接入 Stripe 支付闭环。"
+      ],
+      "flow": [
+        "OBD 采集",
+        "故障检测",
+        "PDF 报告"
+      ],
+      "status": "published",
+      "featured": false,
+      "sortOrder": 3,
+      "year": "",
+      "cover": "",
+      "sourceUrl": "https://jenrimark.github.io/acad-homepage/#projects-zh"
+    },
+    {
+      "id": "lingxi",
+      "slug": "lingxi",
+      "title": "灵犀",
+      "subtitle": "校园生活服务平台",
+      "category": "全栈应用",
+      "art": "campus",
+      "technologies": [
+        "SpringBoot",
+        "Vue3",
+        "Python"
+      ],
+      "summary": "把分散的校园信息，连接成日常服务。",
+      "description": "面向在校师生的校园生活服务平台，解决生活信息分散的问题，项目获得省级二等奖。",
+      "highlights": [
+        "前后端分离：SpringBoot、Vue3 与 Python 协同。",
+        "使用 MySQL、Redis、RabbitMQ 组织数据、缓存与消息。",
+        "围绕校园生活场景提供统一服务入口。"
+      ],
+      "flow": [
+        "校园信息",
+        "生活服务",
+        "统一入口"
+      ],
+      "status": "published",
+      "featured": false,
+      "sortOrder": 4,
+      "year": "",
+      "cover": "",
+      "sourceUrl": "https://jenrimark.github.io/acad-homepage/#projects-zh"
+    },
+    {
+      "id": "roommate",
+      "slug": "roommate",
+      "title": "合租管家",
+      "subtitle": "室友协作工具",
+      "category": "全栈应用",
+      "art": "home",
+      "technologies": [
+        "Vite",
+        "React",
+        "TypeScript"
+      ],
+      "summary": "让一起生活的琐事，有一份共同的安排。",
+      "description": "围绕合租生活中的费用、值日、囤货与约定，构建轻量的室友协作工具。",
+      "highlights": [
+        "费用分摊与值日排班，让安排清楚可查。",
+        "囤货登记，管理共同使用的日常物品。",
+        "室友公约，把生活中的约定留在共同空间。"
+      ],
+      "flow": [
+        "费用分摊",
+        "值日排班",
+        "室友公约"
+      ],
+      "status": "published",
+      "featured": false,
+      "sortOrder": 5,
+      "year": "",
+      "cover": "",
+      "sourceUrl": "https://jenrimark.github.io/acad-homepage/#projects-zh"
+    },
+    {
+      "id": "little-wechat",
+      "slug": "little-wechat",
+      "title": "Little-Wechat",
+      "subtitle": "即时通信系统",
+      "category": "全栈应用",
+      "art": "chat",
+      "technologies": [
+        "SpringBoot",
+        "Vue3",
+        "Redis",
+        "Electron"
+      ],
+      "summary": "让一条消息，抵达另一个人的屏幕。",
+      "description": "独立实现登录、聊天与好友列表，将实时通信能力连接到跨平台桌面客户端。",
+      "highlights": [
+        "WebSocket 实时消息收发。",
+        "Redis 缓存在线状态，减少重复数据库查询。",
+        "Electron 跨平台桌面端，连接前后端与消息通道。"
+      ],
+      "flow": [
+        "用户连接",
+        "实时消息",
+        "在线状态"
+      ],
+      "status": "published",
+      "featured": false,
+      "sortOrder": 6,
+      "year": "",
+      "cover": "",
+      "sourceUrl": "https://jenrimark.github.io/acad-homepage/#projects-zh"
+    },
+    {
+      "id": "tabmark",
+      "slug": "tabmark",
+      "title": "tabmark-organizer",
+      "subtitle": "AI 书签整理扩展",
+      "category": "效率工具",
+      "art": "bookmark",
+      "technologies": [
+        "JavaScript",
+        "Chrome Extension"
+      ],
+      "summary": "让收藏不止被保存，也能再次被找到。",
+      "description": "Chrome 浏览器扩展，提供书签同步整理，并使用 AI 优化结构与命名。",
+      "highlights": [
+        "同步并组织浏览器书签。",
+        "AI 辅助优化目录结构和书签名称。",
+        "在浏览器日常工作流内完成整理。"
+      ],
+      "flow": [
+        "同步书签",
+        "结构整理",
+        "AI 命名"
+      ],
+      "status": "published",
+      "featured": false,
+      "sortOrder": 7,
+      "year": "",
+      "cover": "",
+      "sourceUrl": "https://jenrimark.github.io/acad-homepage/#projects-zh"
+    }
+  ],
+  "honors": [
+    {
+      "name": "MathorCup",
+      "awards": [
+        "国家一等奖"
+      ],
+      "role": "队长"
+    },
+    {
+      "name": "智能汽车",
+      "awards": [
+        "国家二等奖"
+      ],
+      "count": 2
+    },
+    {
+      "name": "RoboCup 先进视觉",
+      "awards": [
+        "国家二等奖",
+        "省级一等奖"
+      ]
+    },
+    {
+      "name": "三创",
+      "awards": [
+        "省一等奖"
+      ]
+    },
+    {
+      "name": "蓝桥杯",
+      "awards": [
+        "省二等奖",
+        "全国铜奖"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "产品",
+      "items": [
+        "产品调研",
+        "用户访谈",
+        "PRD 原型",
+        "MVP",
+        "指标设计"
+      ]
+    },
+    {
+      "category": "AI",
+      "items": [
+        "Prompt",
+        "RAG",
+        "Agent",
+        "评估"
+      ]
+    },
+    {
+      "category": "后端与数据",
+      "items": [
+        "Java",
+        "SpringBoot",
+        "Python",
+        "Flask",
+        "Node.js",
+        "MySQL",
+        "Redis",
+        "RabbitMQ",
+        "WebSocket"
+      ]
+    },
+    {
+      "category": "前端与客户端",
+      "items": [
+        "Vue",
+        "ElementUI",
+        "ECharts",
+        "uni-app",
+        "Kotlin",
+        "Flutter"
+      ]
+    },
+    {
+      "category": "工程工具",
+      "items": [
+        "Git",
+        "Docker",
+        "Linux",
+        "Nginx"
+      ]
+    }
+  ],
+  "schemaVersion": 1,
+  "settings": {
+    "title": "Jenrimark · 吴汉东 — Ideas made real.",
+    "description": "吴汉东 Jenrick Wu，AI 产品与全栈开发。产品的思考，工程的落地。",
+    "heroHeading": "Ideas.",
+    "heroEmphasis": "Made real.",
+    "heroTagline": "从一个好问题，到一个真正可用的产品。",
+    "footerLine": "Have an idea? Let’s make it real.",
+    "copyright": "© 2026 吴汉东"
+  },
+  "campus": [
+    {
+      "period": "2024.09–2026.06",
+      "role": "学生会主席 / 部长",
+      "organization": "计算机学院",
+      "description": "统筹学风部与办公室，完善会议、档案与内部制度，协调跨部门项目与学风建设活动。"
+    },
+    {
+      "period": "2024.09–2025.09",
+      "role": "党支部书记",
+      "organization": "学生党支部",
+      "description": "组织主题党日、理论学习、党员培养与材料归档，推进支部规范化建设。"
+    },
+    {
+      "period": "2023.09–2024.09",
+      "role": "班长",
+      "organization": "软件工程 2301 班",
+      "description": "搭建师生沟通桥梁，统筹班级事务、学风建设与主题班会。"
+    }
+  ]
+}
