@@ -30,3 +30,8 @@ test('valid content retains factual text without executing or inventing fields',
   assert.equal(validateContent(seed()).profile.name, '吴汉东');
   assert.throws(() => validateContent({ projects: [] }), /profile/);
 });
+
+test('malformed repeatable fields are rejected before they can break the public renderer',()=>{
+ const d=seed();d.projects[0].technologies='not-an-array';assert.throws(()=>validateContent(d),/technologies/);
+ delete d.projects[0].technologies;d.skills=[{category:'AI',items:null}];assert.throws(()=>validateContent(d),/skill items/);
+});

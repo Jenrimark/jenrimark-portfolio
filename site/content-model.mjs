@@ -16,8 +16,12 @@ export function validateContent(data) {
     if (!p.title || typeof p.title !== 'string' || p.title.length > 150) throw new Error('project title is required (max 150)');
     if (!['draft', 'published'].includes(p.status)) throw new Error('project status must be draft or published');
     if (p.cover && !safeURL(p.cover)) throw new Error('invalid project cover URL');
+    for(const key of ['technologies','highlights','flow'])if(p[key]!=null&&(!Array.isArray(p[key])||!p[key].every(x=>typeof x==='string')))throw new Error(`project ${key} must contain text items`);
+    for(const key of ['summary','description','category','subtitle','cover','sourceUrl'])if(p[key]!=null&&typeof p[key]!=='string')throw new Error(`project ${key} must be text`);
   }
   for (const k of ['education', 'experience', 'campus', 'honors', 'skills']) if (data[k] != null && !Array.isArray(data[k])) throw new Error(`${k} must be an array`);
+  for(const skill of data.skills||[])if(!Array.isArray(skill.items)||!skill.items.every(x=>typeof x==='string'))throw new Error('skill items must contain text');
+  for(const honor of data.honors||[])if(honor.awards!=null&&(!Array.isArray(honor.awards)||!honor.awards.every(x=>typeof x==='string')))throw new Error('awards must contain text');
   if (JSON.stringify(data).length > 1_500_000) throw new Error('content is too large');
   return data;
 }
